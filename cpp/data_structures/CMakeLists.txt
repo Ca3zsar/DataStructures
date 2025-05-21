@@ -5,8 +5,9 @@ project(DataStructures VERSION 1.0.0 LANGUAGES CXX)
 
 # Create the library target
 add_library(DataStructures STATIC
-    src/node.cpp
-    src/skip_list.cpp
+    # src/node.cpp
+    # src/skip_list.cpp
+    src/entry.cpp
 )
 
 # Specify the include directories for consumers of the library
@@ -16,7 +17,7 @@ target_include_directories(DataStructures PUBLIC
 )
 
 # Set C++ standard
-target_compile_features(DataStructures PUBLIC cxx_std_17)
+target_compile_features(DataStructures PUBLIC cxx_std_20)
 
 # Install the target
 install(TARGETS DataStructures
